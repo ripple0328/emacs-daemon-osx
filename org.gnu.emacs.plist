@@ -6,10 +6,10 @@
     <key>Label</key>
     <string>org.gnu.emacs</string>
     <key>Program</key>
-    <string>/Applications/Emacs.app/Contents/MacOS/Emacs</string>
+    <string>~/Applications/Emacs.app/Contents/MacOS/Emacs</string>
     <key>ProgramArguments</key>
     <array>
-      <string>/Applications/Emacs.app/Contents/MacOS/Emacs</string>
+      <string>~/Applications/Emacs.app/Contents/MacOS/Emacs</string>
       <string>--daemon</string>
     </array>
     <key>RunAtLoad</key>
