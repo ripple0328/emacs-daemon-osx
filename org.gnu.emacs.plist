@@ -6,10 +6,10 @@
     <key>Label</key>
     <string>org.gnu.emacs</string>
     <key>Program</key>
-    <string>/opt/homebrew-cask/Caskroom/emacs/24.3/Emacs.app/Contents/MacOS/Emacs</string>
+    <string>emacs</string>
     <key>ProgramArguments</key>
     <array>
-      <string>/opt/homebrew-cask/Caskroom/emacs/24.3/Emacs.app/Contents/MacOS/Emacs</string>
+      <string>emacs</string>
       <string>--daemon</string>
     </array>
     <key>RunAtLoad</key>

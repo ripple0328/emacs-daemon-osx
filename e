@@ -2,8 +2,8 @@
 
 e=emacsclient
 
-if [ -x /opt/homebrew-cask/Caskroom/emacs/24.3/Emacs.app/Contents/MacOS/bin/emacsclient ]; then
-    e= /opt/homebrew-cask/Caskroom/emacs/24.3/Emacs.app/Contents/MacOS/bin/emacsclient
+if [ -x emacsclient ]; then
+    e= emacsclient
 fi
 
 # Use this as a hint that we're in an Aqua environment
