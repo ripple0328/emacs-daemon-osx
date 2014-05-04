@@ -7,14 +7,14 @@ tell application "Terminal"
     set frameVisible to do shell script "emacsclient -e '(<= 2 (length (visible-frame-list)))'"
     if frameVisible is not "t" then
       -- there is a not a visible frame, launch one
-      do shell script "emacsclient -c -n"
+      do shell script "/usr/local/bin/emacsclient -c -n"
     end if
   on error
     -- FIXME: instead, open an alertbox, since we intend to run Emacs
     -- from launchd.
     -- daemon is not running, start the daemon and open a frame     
-    do shell script "emacs --daemon"
-    do shell script "emacsclient -c -n"
+    do shell script "/usr/local/bin/emacs --daemon"
+    do shell script "/usr/local/bin/emacsclient -c -n"
   end try
 end tell
 
