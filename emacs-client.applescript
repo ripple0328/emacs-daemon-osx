@@ -4,7 +4,7 @@ tell application "Terminal"
   try
     -- we look for <= 2 because Emacs --daemon seems to always
     -- have an entry in visibile-frame-list even if there isn't
-    set frameVisible to do shell script "emacsclient -e '(<= 2 (length (visible-frame-list)))'"
+    set frameVisible to do shell script "/usr/local/bin/emacsclient -e '(<= 2 (length (visible-frame-list)))'"
     if frameVisible is not "t" then
       -- there is a not a visible frame, launch one
       do shell script "/usr/local/bin/emacsclient -c -n"
